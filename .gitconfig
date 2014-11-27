@@ -28,6 +28,15 @@
 [diff]
   #external = BComp.exe $2 $5
   #external = diff.bat
+	tool = bc3
+[difftool "bc3"]
+	cmd = \"D:/Program Files/Beyond Compare 3/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+	prompt = false	
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	cmd = \"D:/Program Files/Beyond Compare 3/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
 [help]
   format = html
   autocorrect =true
